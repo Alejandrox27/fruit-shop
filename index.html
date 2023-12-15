@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop app</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap" rel="stylesheet">
+    <script src="scripts/scripts.js"></script>
+</head>
+<body>
+    <main class="container">
+        <div class = "color">
+        <h1>Fruit shop</h1>
+
+        <div class="products">
+            <section class="card">
+
+                <div class="image">
+                    <p>Strawberry $5 🍓</p>
+                </div>
+
+                <div class="body">
+                    <button class="button" data-price="5" data-fruit="Strawberry">Add</button>
+                    <button class="button-delete" data-fruit="Strawberry">Remove</button>
+                </div>
+
+            </section>
+
+            <section class="card">
+
+                <div class="image">
+                    <p>Banana $3 🍌</p>
+                </div>
+
+                <div class="body">
+                    <button class="button" data-price="3" data-fruit="Banana">Add</button>
+                    <button class="button-delete" data-fruit="Banana">Remove</button>
+                </div>
+
+            </section>
+
+            <section class="card">
+
+                <div class="image">
+                    <p>Orange $6 🍊</p>
+                </div>
+
+                <div class="body">
+                    <button class="button" data-price="6" data-fruit="Orange">Add</button>
+                    <button class="button-delete" data-fruit="Orange">Remove</button>
+                </div>
+
+            </section>
+
+            <section class="card">
+
+                <div class="image">
+                    <p>Apple $10 🍎</p>
+                </div>
+
+                <div class="body">
+                    <button class="button" data-price="10" data-fruit="Apple">Add</button>
+                    <button class="button-delete" data-fruit="Apple">Remove</button>
+                </div>
+
+            </section>
+        </div>
+
+        <div class="messages">
+            <ul class="fruit-messages"></ul>
+            
+        </div>
+        <div class="button-buy">
+            <button class="buy-products">Buy products</button>
+        </div>
+    </div>
+    </main>
+
+    <template id="liTemplate">
+        <li class="fruit">
+            <span class="title">Apple</span>
+            <span class="stock">1</span>
+        </li>
+    </template>
+</body>
+</html>
